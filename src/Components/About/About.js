@@ -21,7 +21,14 @@ function About() {
         project section. Apart from coding, I like playing guitar, watching
         series, movies and listening music!
       </p>
-      <p className="secondary-p">Download my resume here - </p>
+      <p className="secondary-p">
+        <a
+          href="https://drive.google.com/drive/u/1/folders/1ENrZxf7vB9Ewx_-dVUZ_Za5zvcPmO-Le"
+          target="_blank"
+        >
+          Download my resume here.
+        </a>
+      </p>
 
       <div className="skills">
         <h3>These are my Skillset </h3>
