@@ -1,0 +1,41 @@
+.about {
+  background-color: lightgreen;
+  height: 100vh;
+  scroll-snap-align: start;
+  padding-top: 5rem;
+  padding-left: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+.about > h1 {
+  font-size: 60px;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.about > p {
+  font-size: 30px;
+  font-weight: 880;
+  color: #20124d;
+}
+.about > .secondary-p {
+  margin-top: 1rem;
+  font-size: 25px;
+  font-weight: 650;
+  color: #213035;
+}
+.skills {
+  margin-top: 2rem;
+}
+.skills > h3 {
+  margin-bottom: 0.5rem;
+  font-size: 25px;
+  color: #0a0a0b;
+}
+
+.skills > li {
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.5rem;
+  color: #0a0a0b;
+}

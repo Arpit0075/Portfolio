@@ -1,0 +1,25 @@
+.contact {
+  background-color: lightblue;
+  height: 100vh;
+  scroll-snap-align: start;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.contact > h1 {
+  font-size: 60px;
+  letter-spacing: 0.5rem;
+  margin-bottom: 5rem;
+}
+.contact > p {
+  font-size: 30px;
+  font-weight: 880;
+  color: #20124d;
+}
+.contact > .secondary-p {
+  margin-top: 3rem;
+  font-size: 25px;
+  font-weight: 650;
+  color: #213035;
+}

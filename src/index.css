@@ -1,13 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (max-width: 800px) {
+  .rightContainer > h1,
+  .contact > h1,
+  .about > h1,
+  .project-left > h3 {
+    font-size: 25px !important;
+  }
+  .rightContainer > p,
+  .contact > p,
+  .about > p,
+  .project-left > p {
+    font-size: 20px !important;
+  }
+  .about > .secondary-p {
+    font-size: 20px !important;
+  }
+  .menu > ul > li,
+  .skills > li {
+    font-size: 20px !important;
+  }
+  .menu {
+    max-width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .about > p {
+    font-size: 18px !important;
+  }
+  .about > .secondary-p {
+    font-size: 16px !important;
+  }
+  .about > h1 {
+    font-size: 20px !important;
+  }
+  .skills > li {
+    font-size: 15px !important;
+  }
 }
