@@ -25,6 +25,7 @@ function About() {
         <a
           href="https://drive.google.com/drive/u/1/folders/1ENrZxf7vB9Ewx_-dVUZ_Za5zvcPmO-Le"
           target="_blank"
+          rel="noreferrer"
         >
           Download my resume here.
         </a>
