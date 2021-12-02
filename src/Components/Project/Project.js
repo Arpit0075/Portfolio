@@ -5,6 +5,8 @@ import rightIcon from "../../Images/right-icon.png";
 import googleDrive from "../../Images/google-drive.png";
 import GOT from "../../Images/GOT.png";
 import task from "../../Images/task.png";
+import ecommerce from "../../Images/ecommerce.png";
+import chatApp from "../../Images/chatApp.png";
 
 function Project() {
   //state for the i variable
@@ -16,7 +18,8 @@ function Project() {
   const projects = [
     {
       title: "Google-Drive-Clone",
-      description: "App used for storing user data and displaying",
+      description:
+        "Used Google firebase for authentication, storage and database",
       links: [
         "https://github.com/Arpit0075/google-drive-clone",
         "https://drive-clone-a509e.web.app",
@@ -24,22 +27,40 @@ function Project() {
       imgSrc: googleDrive,
     },
     {
-      title: "Game of Thrones App",
-      description: "Search filter app for GOT Characters",
+      title: "E-commerce Application",
+      description: "MERN App with Razorpay payment integration",
       links: [
-        "https://github.com/Arpit0075/Mini-Projects/tree/main/GOT",
-        "https://got-1.netlify.app/",
+        "https://github.com/Arpit0075/ecommerce",
+        "https://ecommerce918.netlify.app",
       ],
-      imgSrc: GOT,
+      imgSrc: ecommerce,
+    },
+    {
+      title: "Group Chat Application",
+      description: "MERN App with Socket.io",
+      links: [
+        "https://github.com/Arpit0075/chatApp",
+        "https://chatapp978.netlify.app",
+      ],
+      imgSrc: chatApp,
     },
     {
       title: "Task Portal",
-      description: "Student task submission portal",
+      description: "Student task submission portal, MERN App",
       links: [
         "https://github.com/Arpit0075/StudentTasks",
         "https://student-task1.netlify.app/",
       ],
       imgSrc: task,
+    },
+    {
+      title: "Game of Thrones App",
+      description: "Search filter app for GOT Characters using HTML,CSS ,JS",
+      links: [
+        "https://github.com/Arpit0075/Mini-Projects/tree/main/GOT",
+        "https://got-1.netlify.app/",
+      ],
+      imgSrc: GOT,
     },
   ];
 
