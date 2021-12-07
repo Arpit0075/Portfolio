@@ -7,6 +7,7 @@ import GOT from "../../Images/GOT.png";
 import task from "../../Images/task.png";
 import ecommerce from "../../Images/ecommerce.png";
 import chatApp from "../../Images/chatApp.png";
+import aws from "../../Images/aws.png";
 
 function Project() {
   //state for the i variable
@@ -52,6 +53,16 @@ function Project() {
         "https://student-task1.netlify.app/",
       ],
       imgSrc: task,
+    },
+    {
+      title: "AWS-CRUD App",
+      description:
+        "Full stack application using DynamoDb, API Gateway and Lambda function",
+      links: [
+        "https://github.com/Arpit0075/AWS-usersApi",
+        "https://main.d39jd3p9en6gka.amplifyapp.com/",
+      ],
+      imgSrc: aws,
     },
     {
       title: "Game of Thrones App",
