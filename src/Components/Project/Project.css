@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .project-container {
   margin: 0.5rem;
@@ -34,18 +33,23 @@
   font-weight: 550;
 }
 .project-right {
+  position: relative;
   flex: 2;
   background-color: white;
   padding: 1rem;
 }
-.buttons {
+
+.prevBtn {
   position: absolute;
   top: 50%;
-  right: 2%;
-  left: 33%;
-  display: flex;
-  justify-content: space-between;
+  left: 1%;
 }
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+}
+
 button > img {
   width: 30px;
   height: 30px;
