@@ -18,16 +18,6 @@ function Project() {
 
   const projects = [
     {
-      title: "Google-Drive-Clone",
-      description:
-        "Used Google firebase for authentication, storage and database",
-      links: [
-        "https://github.com/Arpit0075/google-drive-clone",
-        "https://drive-clone-a509e.web.app",
-      ],
-      imgSrc: googleDrive,
-    },
-    {
       title: "E-commerce Application",
       description: "MERN App with Razorpay payment integration",
       links: [
@@ -65,6 +55,16 @@ function Project() {
       imgSrc: aws,
     },
     {
+      title: "Google-Drive-Clone",
+      description:
+        "Used Google firebase for authentication, storage and database,its full stack application",
+      links: [
+        "https://github.com/Arpit0075/google-drive-clone",
+        "https://drive-clone-a509e.web.app",
+      ],
+      imgSrc: googleDrive,
+    },
+    {
       title: "Game of Thrones App",
       description: "Search filter app for GOT Characters using HTML,CSS ,JS",
       links: [
@@ -83,9 +83,15 @@ function Project() {
           <p>Title : {projects[i].title}</p>
           <p>Description : {projects[i].description}</p>
           <p>
-            Link :
+            Github Link:
             <a href={projects[i].links[0]} target="_blank" rel="noreferrer">
               {projects[i].links[0]}
+            </a>
+          </p>
+          <p>
+            Url Link:
+            <a href={projects[i].links[1]} target="_blank" rel="noreferrer">
+              {projects[i].links[1]}
             </a>
           </p>
         </div>

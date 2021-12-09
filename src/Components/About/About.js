@@ -23,7 +23,7 @@ function About() {
       </p>
       <p className="secondary-p">
         <a
-          href="https://drive.google.com/drive/u/1/folders/1ENrZxf7vB9Ewx_-dVUZ_Za5zvcPmO-Le"
+          href="https://drive.google.com/file/d/1J4wkP5_vjhPFg2wFzzgPCq5uAVxmX-Vz/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
