@@ -12,22 +12,15 @@ body {
 
 @media (max-width: 800px) {
   .rightContainer > h1,
-  .contact > h1,
-  .about > h1,
   .project-left > h3 {
     font-size: 25px !important;
   }
   .rightContainer > p,
-  .contact > p,
-  .about > p,
   .project-left > p {
     font-size: 20px !important;
   }
-  .about > .secondary-p {
-    font-size: 20px !important;
-  }
-  .menu > ul > li,
-  .skills > li {
+
+  .menu > ul > li {
     font-size: 20px !important;
   }
   .menu {
@@ -40,17 +33,5 @@ body {
   }
   .hamburger {
     display: none;
-  }
-  .about > p {
-    font-size: 18px !important;
-  }
-  .about > .secondary-p {
-    font-size: 16px !important;
-  }
-  .about > h1 {
-    font-size: 20px !important;
-  }
-  .skills > li {
-    font-size: 15px !important;
   }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Project.css";
-import leftIcon from "../../Images/left-icon.png";
-import rightIcon from "../../Images/right-icon.png";
+import leftIcon from "../../Images/left.png";
+import rightIcon from "../../Images/right.png";
 import googleDrive from "../../Images/google-drive.png";
 import GOT from "../../Images/GOT.png";
 import task from "../../Images/task.png";
@@ -12,9 +12,6 @@ import aws from "../../Images/aws.png";
 function Project() {
   //state for the i variable
   const [i, setI] = useState(0);
-
-  //state for image transform
-  const [state, setstate] = useState("1");
 
   const projects = [
     {
@@ -77,72 +74,65 @@ function Project() {
 
   return (
     <div className="project" id="project">
-      <div className="project-container">
-        <div className="project-left">
-          <h3>Project Detail </h3>
-          <p>Title : {projects[i].title}</p>
-          <p>Description : {projects[i].description}</p>
-          <p>
-            Github Link:
-            <a href={projects[i].links[0]} target="_blank" rel="noreferrer">
-              {projects[i].links[0]}
-            </a>
-          </p>
-          <p>
-            Url Link:
-            <a href={projects[i].links[1]} target="_blank" rel="noreferrer">
-              {projects[i].links[1]}
-            </a>
-          </p>
-        </div>
-        <div className="project-right">
-          <a href={projects[i].links[1]} target="_blank" rel="noreferrer">
-            <img
-              style={{ opacity: state }}
-              src={projects[i].imgSrc}
-              alt="projectDemo"
-            />
-          </a>
+      {projects.map((p, index) => {
+        return (
+          <div
+            className={
+              index === i ? "project-container activeSlide" : "nonActiveSlide"
+            }
+            key={index}
+          >
+            {index === i && (
+              <>
+                <div className="project-left">
+                  <h3>Project Detail </h3>
+                  <p>Title : {p.title}</p>
+                  <p>Description : {p.description}</p>
+                  <p>
+                    Github Link:
+                    <a href={p.links[0]} target="_blank" rel="noreferrer">
+                      {p.links[0]}
+                    </a>
+                  </p>
+                  <p>
+                    Url Link:
+                    <a href={p.links[1]} target="_blank" rel="noreferrer">
+                      {p.links[1]}
+                    </a>
+                  </p>
+                </div>
+                <div className="project-right">
+                  <a href={p.links[1]} target="_blank" rel="noreferrer">
+                    <img src={p.imgSrc} alt="projectDemo" />
+                  </a>
 
-          {/* buttons */}
-          <button
-            className="prevBtn"
-            onClick={() => {
-              if (i === 0) {
-                setI(projects.length - 1);
-                setstate("0");
-                setTimeout(() => {
-                  setstate("1");
-                }, 700);
-              } else setI(i - 1);
-              setstate("0");
-              setTimeout(() => {
-                setstate("1");
-              }, 700);
-            }}
-          >
-            <img src={leftIcon} alt="left" />
-          </button>
-          <button
-            className="nextBtn"
-            onClick={() => {
-              if (i === projects.length - 1) {
-                setI(0);
-                setstate("0");
-                setTimeout(() => {
-                  setstate("1");
-                }, 700);
-              } else setI(i + 1);
-              setstate("0");
-              setTimeout(() => {
-                setstate("1");
-              }, 700);
-            }}
-          >
-            <img src={rightIcon} alt="right" />
-          </button>
-        </div>
-      </div>
+                  {/* buttons */}
+                  <button
+                    className="prevBtn"
+                    onClick={() => {
+                      if (i === 0) {
+                        setI(projects.length - 1);
+                      } else setI(i - 1);
+                    }}
+                  >
+                    <img src={leftIcon} alt="left" />
+                  </button>
+                  <button
+                    className="nextBtn"
+                    onClick={() => {
+                      if (i === projects.length - 1) {
+                        setI(0);
+                      } else setI(i + 1);
+                    }}
+                  >
+                    <img src={rightIcon} alt="right" />
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }

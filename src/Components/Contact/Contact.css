@@ -1,4 +1,5 @@
 .contact {
+  position: relative;
   background-color: lightblue;
   height: 100vh;
   scroll-snap-align: start;
@@ -10,20 +11,48 @@
   background-position: center;
   background-size: cover;
 }
-
-.contact > h1 {
+.contact-heading {
+  position: absolute;
+  top: 16%;
+  left: 10%;
   font-size: 60px;
   letter-spacing: 0.5rem;
-  margin-bottom: 10rem;
 }
-.contact > p {
-  font-size: 30px;
+
+.contact-container {
+  margin-top: 15rem;
+  padding: 1rem;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container > p {
+  font-size: 23px;
   font-weight: 880;
   color: #20124d;
 }
-.contact > .secondary-p {
+.contact-container > .secondary-p {
   margin-top: 3rem;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 650;
   color: #213035;
+}
+.contact-container > p > .icon {
+  height: 22px;
+  width: 25px;
+}
+
+@media (max-width: 600px) {
+  .contact-heading {
+    font-size: 45px;
+  }
+  .contact-container > p {
+    font-size: 18px;
+  }
+  .contact-container > .secondary-p {
+    font-size: 16px;
+  }
 }

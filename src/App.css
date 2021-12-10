@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
 .App {
   scroll-snap-type: y mandatory;
   height: 100vh;
   overflow-y: scroll;
+  font-family: "Hind Siliguri", sans-serif;
 }
