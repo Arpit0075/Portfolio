@@ -32,20 +32,21 @@ function About() {
         </div>
         <div className="skills">
           <h3>These are my Skillset </h3>
-          <li>
-            HTML, CSS, JavaScript <img src={html} alt="html" />
-            <img src={css} alt="css" />
-            <img src={js} alt="js" />
+          <li className="skill-sets">
+            HTML, CSS, JavaScript{" "}
+            <img className="skills-icon" src={html} alt="html" />
+            <img className="skills-icon" src={css} alt="css" />
+            <img className="skills-icon" src={js} alt="js" />
           </li>
 
-          <li>
-            React Js <img src={react} alt="css" />
+          <li className="skill-sets">
+            React Js <img className="skills-icon" src={react} alt="css" />
           </li>
-          <li>
-            MongoDb <img src={mongo} alt="css" />
+          <li className="skill-sets">
+            MongoDb <img className="skills-icon" src={mongo} alt="css" />
           </li>
-          <li>
-            NodeJs <img className="icon" src={node} alt="css" />
+          <li className="skill-sets">
+            NodeJs <img className="skills-icon" src={node} alt="css" />
           </li>
         </div>
       </div>

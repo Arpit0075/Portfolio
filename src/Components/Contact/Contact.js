@@ -11,19 +11,20 @@ function Contact() {
         <p>
           Its best to reach me on my email or you can reach me on my socials.
         </p>
-        <p>
-          My email address <img src={gmail} className="icon" alt="gmail" />{" "}
+        <p className="contact-me">
+          My email address
+          <img src={gmail} className="contact-icon" alt="gmail" />
           arpitworks4@gmail.com
         </p>
-        <p>
+        <p className="contact-me">
           My Github
           <a
             href="https://github.com/Arpit0075"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={github} className="icon" alt="github" />
-          </a>{" "}
+            <img src={github} className="contact-icon" alt="github" />
+          </a>
           www.github.com/Arpit0075
         </p>
         <p className="secondary-p">

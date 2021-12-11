@@ -11,12 +11,10 @@ body {
 }
 
 @media (max-width: 800px) {
-  .rightContainer > h1,
-  .project-left > h3 {
+  .rightContainer > h1 {
     font-size: 25px !important;
   }
-  .rightContainer > p,
-  .project-left > p {
+  .rightContainer > p {
     font-size: 20px !important;
   }
 

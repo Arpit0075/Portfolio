@@ -75,6 +75,11 @@ button > img {
     max-width: max-content;
   }
 }
+@media (max-width: 1200px) {
+  .project-right {
+    flex: 1;
+  }
+}
 
 @media (max-width: 600px) {
   .project-container {
@@ -86,5 +91,14 @@ button > img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+  .project-left > h3 {
+    font-size: 14px;
+  }
+  .project-left > p {
+    font-size: 10px;
+  }
+  .project-right {
+    max-width: 500px;
   }
 }
